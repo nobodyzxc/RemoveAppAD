@@ -2,7 +2,7 @@
 
 if [ ! -f apktool ];then
     wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O apktool
-    if [ ! -f apktool.jar ];then
+    if [ ! -f apktool ];then
         echo Please download latest apktool script from https://github.com/iBotPeaches/Apktool/scripts
         exit
     fi
