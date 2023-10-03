@@ -22,6 +22,8 @@ fi
 
 APK="$1"
 if [ ! -z "$APK" ] && [ -f $APK ];then
+    mkdir -p $HOME/.local/share/apktool
+    rm -rf $HOME/.local/share/apktool/framework/1.apk
     bash apktool d "$APK"
     OIFS="$IFS"
     IFS=$'\n'
